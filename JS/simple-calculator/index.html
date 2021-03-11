@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <script>
+        /*
+        let firstValue = 1;
+        let operator = "+";
+        let secondValue = 2;
+        console.log({
+            firstValue,
+            operator,
+            secondValue,
+        });
+        }
+        */
+        /*
+        let firstValue = prompt("Veuillez saisir un chiffre :");
+        firstValue = parseInt(firstValue);
+        let operator = "+";
+        let secondValue = prompt("Veuillez saisir un second :");
+        secondValue = parseInt(secondValue);
+        */
+        /*
+        if(operator === "+"){
+            console.log(firstValue + secondValue);
+        }else{
+            console.log(firstValue - secondValue);
+        }
+        */
+       /*
+        switch (operator) {
+        case '+':
+            console.log(firstValue + secondValue);
+            break;
+        case '-':
+            console.log(firstValue - secondValue);
+        case '*':
+            console.log(firstValue * secondValue);
+        case '/':
+            console.log(firstValue / secondValue);
+            break;
+        default:
+            console.log("Invalid Operator");
+        }
+        */
+
+        const random = Math.floor(Math.random() * 100) + 1;
+        console.log(random);
+        const playerName = prompt("Veuillez saisir votre nom :")
+        let chooseNumber = parseInt(prompt("Veuillez saisir un chiffre compris entre 1 et 100"), 10);
+        //console.log(chooseNumber);
+
+        
+        while(chooseNumber !== random){
+            if((chooseNumber < random) && (chooseNumber >=0) && (chooseNumber <=100)){
+                //console.log("It is more");
+                chooseNumber = parseInt(prompt("It's more, try again :"), 10);
+            }else if((chooseNumber > random) && (chooseNumber >=0) && (chooseNumber <=100)){
+                //console.log("It's less");
+                chooseNumber = parseInt(prompt("It's less, try again :"), 10);
+            }else{
+                //console.log("It's not a number !");
+                chooseNumber = parseInt(prompt("Please enter a NUMBER between 1 and 100!"), 10);
+            }
+        }
+        console.log(`${playerName} wins`);
+
+        // Solution Basile
+/*
+        while(true){
+            const chooseNumber = parseInt(prompt("Veuillez saisir un chiffre compris entre 1 et 100"), 10);
+
+            if(chooseNumber < random){
+                
+            }
+            if{
+    
+            }
+            if{
+    
+            }
+        }
+    */
+    </script>
+</body>
+</html>
